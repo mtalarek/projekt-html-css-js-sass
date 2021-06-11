@@ -1,0 +1,77 @@
+#procedures {
+    header {
+        justify-content: center;
+
+        p {
+            font-size: 25px;
+            text-align: center;
+            font-weight: 300;
+            margin-bottom: 100px;
+            margin-top: 0;
+        }
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+
+        .col {
+            padding: 20px;
+            border: 1px solid lightgray;            
+
+            .box-item {
+                text-align: center;
+
+                h2 {
+                    margin: 50px 0;
+                }
+
+                p {
+                    font-weight: 300;
+                    font-size: 25px;
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                a {
+                    margin: 50px 0;
+                }
+            }
+        }
+
+        .shadow {
+            box-shadow:0px 5px 15px lightgray;
+            border: none;
+        }
+    }
+
+    @media (min-width: $medium) {
+        .container {
+            .box {
+                flex-direction: row;
+                justify-content: space-between;
+
+                .box-item {
+                    h2 {
+                        font-size: 22px;
+                        margin: 35px 0;
+                    }
+        
+                    p {
+                        font-size: 16px;
+                    }
+
+                    a {
+                        margin: 20px 0;
+                    }
+                }
+            }
+    
+            .col-md-33p {
+                width: 32%;
+            }
+        }
+    }
+}

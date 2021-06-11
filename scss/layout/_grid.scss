@@ -1,0 +1,30 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+
+.col {
+    width: 100%;
+}
+
+@media all and (min-width: $medium) {
+    .col-md-50p {
+        width: 50%;   
+    }
+
+    .col-md-33p {
+        width: 31%;
+    }
+
+    #services .service {
+        margin: 0;
+    }
+}
+
+@media all and (min-width: $extra-large) {
+    .col-lg-25p {
+        width: 25%;
+    }
+}
