@@ -47,7 +47,7 @@ formula.addEventListener("submit", function(e) {
     let appointment = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
-        service: document.getElementById('check').value,
+        service: document.getElementById('service').value,
         phone: document.getElementById('phone').value,
         data: document.getElementById('data').value,
         hour: document.getElementById('time').value,
@@ -132,13 +132,13 @@ formula.addEventListener("submit", function(e) {
         formula[6].classList.remove("border");
     }
 
-    console.log(name);
+    /* console.log(name);
     console.log(email);
-    console.log(check);
-    console.log(phone);
+    /* console.log(check); */
+    /* console.log(phone);
     console.log(data);
     console.log(hour);
-    console.log(notes);
+    console.log(notes); */
 
     if(error.classList[0]!="error") { 
         send(appointment);
