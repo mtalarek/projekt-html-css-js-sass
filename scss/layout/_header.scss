@@ -1,4 +1,4 @@
-.section-header {
+header {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -45,6 +45,7 @@
                 padding: 15px 35px;
                 text-transform: uppercase;
                 color: #fff;
+                transition: all .3s;
 
                 &:hover {
                     background-color: $button-color;
@@ -69,10 +70,21 @@
                     margin: 0 15px;
                     border: 1px solid $primary-text-color;
                     border-radius: 50%;
+                    transition: all .3s;
 
                     i{
                         font-size: 15px;                    
                     } 
+
+                    &:hover {
+                        border: 0;
+                        background-color: $primary-color;
+                        color: #fff;
+
+                        i {
+                            color: #fff;
+                        }
+                    }
                 }
 
                 .text {

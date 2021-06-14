@@ -1,7 +1,8 @@
 #team {
+    
     header {
         justify-content: center;
-
+        text-align: center;
         p {
             font-size: 25px;
             text-align: center;
@@ -17,96 +18,101 @@
 
         .col {
             text-align: center;
-            position: static;             
+            position: static;
 
-                img {
-                    width: 100%;
-                }
-
-                .frame {
-                    position: relative;
-                    background-color: #fff;
-                    bottom: 80px;
-                    width: 85%;
-                    margin: 0px auto;
-                    padding: 40px 0;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-
-                    &.shadow {
-                        bottom: 120px;
-                    }
-
-                    h2 {
-                        margin: 0;
-                        font-size: 22px;
-                    }
-    
-                    p {
-                        margin: 0;
-                        font-weight: 300;
-                        font-size: 16px;
-                    }
-
-                    .social {
-                        display: flex;
-                        justify-content: space-around;
-                        margin-top: 30px;
-                        width: 170px;
-                        
-                        a {
-                            text-decoration: none;
-                            .icon {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                height: 40px;
-                                width: 40px;
-                                color: $secondary-color;
-                                border: 1px solid $primary-text-color;
-                                border-radius: 50%;
-                                transition: all .3s;
-                                
-                                i{
-                                    font-size: 22px;                    
-                                } 
-                                
-                                &.tw {
-                                    color: #fff;
-                                    background-color: $primary-color;
-                                    border: none;
-                                }
-
-                                &:hover {
-                                    background-color: $primary-color;
-                                    border: none;
-                                    color: #fff;
-                                }
-
-                                &.tw:hover {
-                                    background-color: #fff;
-                                    color: $secondary-color;
-                                    border: 1px solid $primary-text-color;
-                                    
-                                }
-            
-                                
-                            }
-                        }
-                        
-                    }
-                } 
+            img {
+                width: 100%;
             }
 
+            .frame {
+                position: relative;
+                background-color: #fff;
+                bottom: 80px;
+                width: 85%;
+                margin: 0px auto;
+                padding: 40px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                transition: all .3s;
+
+                h2 {
+                    margin: 0;
+                    font-size: 34px;
+                }
+    
+                p {
+                    margin: 0;
+                    font-weight: 300;
+                    font-size: 16px;
+                }
+
+                .social {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 30px;
+                    width: 170px;
+                    display: none;
+                        
+                    a {
+                        text-decoration: none;
+
+                        .icon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 40px;
+                            width: 40px;
+                            color: $secondary-color;
+                            border: 1px solid $primary-text-color;
+                            border-radius: 50%;
+                            transition: all .3s;
+                                
+                            i{
+                                font-size: 22px;                    
+                            } 
+                                
+                            &.tw {
+                                color: #fff;
+                                background-color: $primary-color;
+                                border: none;
+                            }
+
+                            &:hover {
+                                background-color: $primary-color;
+                                border: none;
+                                color: #fff;
+                            }
+
+                            &.tw:hover {
+                                background-color: #fff;
+                                color: $secondary-color;
+                                border: 1px solid $primary-text-color; 
+                            }
+                        }
+                    }  
+                }      
+            } 
+
+            .frame:hover {
+                bottom: 120px;
+                
+                .social {
+                    
+                    display: flex;
+                }
+            }
+        }
+
         .shadow {
-            box-shadow:0px 5px 15px lightgray;
+            box-shadow:0px 5px 20px #f0f0f0;
             border: none;
         }
     }
 
     @media (min-width: $medium) {
+        height: 1000px;
         .container {
             .box {
                 flex-direction: row;
@@ -124,7 +130,6 @@
                     }
                 }
             }
-    
             .col-md-33p {
                 width: 32%;
             }

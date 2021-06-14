@@ -1,0 +1,123 @@
+#form-contact {
+    
+    .form-img {
+        display: flex;
+        height: 500px;
+
+        .image {
+            flex-basis: 40%;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                
+            }
+            display: none;
+        }
+
+        .form-container {
+            height: 100%;
+            flex-basis: 100%;
+            display: flex;
+
+            .form {
+                flex-basis: 100%;
+                height: 100%;
+                background-color: $primary-color;
+
+                .column {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    height: 100%;
+                    
+                    form {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        align-content: space-around;
+
+                        input,
+                        select,
+                        textarea {
+                            width: 100%;
+                            padding: 10px 15px;
+                            border: 0;
+                            border-bottom: 1px solid #fff;
+                            background-color: $primary-color;
+                            color: #fff;
+                            text-transform: uppercase;
+                            outline: none;
+
+                            &.border {
+                                border-bottom: 1px solid red;
+                            }
+
+                        }
+
+                        textarea {
+                            margin: 30px 0;
+                        }
+                        ::-webkit-input-placeholder {
+                            color: #fff;
+                        }
+                    }
+
+                    p {
+                        color: red;
+                        opacity: 0;
+
+                        &.error {
+                            opacity: 1;
+                        }
+                    }
+
+                    
+                }
+            }
+
+            .margin {
+                flex-basis: 30%;
+                height: 100%;
+                background-color: $primary-color;
+                display: none;
+            }
+        }
+    }
+    
+
+    @media (min-width: $medium) {
+        .form-img {
+            .image {
+                display: block;
+            }
+
+            .form-container {
+                flex-basis: 60%;
+
+                .form {
+
+                    .column {
+                        margin-left: 50px;
+                        margin-right: 0;
+                        flex-basis: 72%;
+
+                        #formula {
+                            input,
+                            select {
+                                width: 47%;
+                            }
+                        }
+                    }
+                }
+                
+                .margin {
+                    flex-basis: 28%;
+                    display: block;
+                }
+            }
+        }
+    }
+}

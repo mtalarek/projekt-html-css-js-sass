@@ -1,8 +1,8 @@
 #blog {
     .container {
         .section-header {
-            display: flex;
             justify-content: center;
+            text-align: center;
     
             p {
                 font-size: 25px;
@@ -24,8 +24,13 @@
                 .box-item {
                     text-align: center;
     
+                    .data {
+                        font-size: 20px;
+                    }
+
                     h2 {
-                        margin: 50px 0;
+                        margin: 30px 0;
+                        font-size: 38px;
                     }
     
                     p {
@@ -48,34 +53,40 @@
                 border: none;
             }
         }
+    }
     
-        @media (min-width: $medium) {
-            .container {
-                .box {
-                    flex-direction: row;
-                    justify-content: space-between;
+    @media (min-width: $medium) {
+        .container {
+            .box {
+                flex-direction: row;
+                justify-content: space-between;
     
+                .col {
                     .box-item {
+                        .data {
+                            font-size: 12px;
+                        }
+    
                         h2 {
                             font-size: 22px;
-                            margin: 35px 0;
+                            margin: 25px 0;
                         }
-            
+                
                         p {
                             font-size: 16px;
                         }
-    
+        
                         a {
                             margin: 20px 0;
                         }
                     }
+                    
                 }
+            }
         
-                .col-md-33p {
-                    width: 32%;
-                }
+            .col-md-33p {
+                width: 32%;
             }
         }
     }
-    
 }

@@ -6,12 +6,12 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
+    font-size: 13px;
 }
 
 .btn-primary {
     @extend %btn;
     background-color: $primary-color;
-    font-size: 13px;
 
     &:hover {
         background-color: $button-color;
@@ -21,9 +21,21 @@
 .btn-secondary {
     @extend %btn;
     background-color: $button-color;
-    font-size: 13px;
 
     &:hover {
         background-color: $primary-color;
+    }
+}
+
+.btn-form {
+    @extend %btn;
+    background-color: #fff;
+    color: $secondary-color;
+    transition: all .3s;
+
+    &:hover {
+        background-color: $secondary-color;
+        color: #fff;
+        
     }
 }
