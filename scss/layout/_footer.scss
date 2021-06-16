@@ -1,5 +1,6 @@
 #footer {
     text-align: center;
+    margin-top: 50px;
 
     img {
         width: 116px;
@@ -12,8 +13,8 @@
         margin: 50px 0;
     }
 
-    .bottom-menu {
-        padding: 0;
+    .bottom-menu {  
+        color: $secondary-color;
         
         .bottom-menu-item {
             display: inline-block;
@@ -21,14 +22,12 @@
             text-transform: uppercase;
             padding: 0px 40px;
             font-weight: 400;
+            color: $secondary-color;
 
             a {
                 text-decoration: none;
                 text-transform: uppercase;
             }
-        }
-        
-        
-        
+        } 
     }
 }

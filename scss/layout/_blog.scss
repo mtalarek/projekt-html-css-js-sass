@@ -57,6 +57,11 @@
     
     @media (min-width: $medium) {
         .container {
+            .section-header {
+                p {
+                    font-size: 16px;
+                }
+            }
             .box {
                 flex-direction: row;
                 justify-content: space-between;

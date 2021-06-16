@@ -6,7 +6,11 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-    font-size: 13px;
+    font-size: 21px;
+
+    @media (min-width: $medium) {
+        font-size: 13px;
+    }
 }
 
 .btn-primary {

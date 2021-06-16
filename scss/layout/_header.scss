@@ -21,8 +21,7 @@ header {
                 letter-spacing: 2px;
             }
 
-            .p2 {
-                font-size: 50px;
+            h1 {
                 font-weight: bold;
                 margin: 0;
                 color: #1e2528;
@@ -46,6 +45,7 @@ header {
                 text-transform: uppercase;
                 color: #fff;
                 transition: all .3s;
+                font-size: 16px;
 
                 &:hover {
                     background-color: $button-color;
@@ -118,50 +118,52 @@ header {
     }
 
     @media all and (min-width: $large) {
-        
         .nav-image-right {
             display: block;
         }
+        .container {
         
-        .header-content {
-            
-            margin-top: 200px;
-
-            .p2 {
-                font-size: 60px;
-                margin: 30px 0px;
-            }
-
-            .p3 {
-              font-size: 16px;
-            }
-        }
-
-        .link {
-                        
-            button {
-                margin-right: 15px;
-            }
-
-            .link-item {
-                color: $button-color;
+            .header-content {
                 
-                .icon {
-                    height: 45px;
-                    width: 45px;
-                    margin: 0 10px;
-                    border: 1px solid $secondary-color;
+                margin-top: 200px;
 
-                    i{
-                        font-size: 20px;
-                        color: $button-color;
-                    } 
+                .p2 {
+                    font-size: 60px;
+                    margin: 30px 0px;
                 }
 
-                .text {
-                    font-size: 16px;
+                .p3 {
+                font-size: 16px;
                 }
-            }  
+            }
+
+            .link {
+                            
+                button {
+                    margin-right: 15px;
+                    text-transform: none;
+                }
+
+                .link-item {
+                    color: $button-color;
+                    
+                    .icon {
+                        height: 45px;
+                        width: 45px;
+                        margin: 0 10px;
+                        border: 1px solid $secondary-color;
+
+                        i{
+                            font-size: 20px;
+                            color: $button-color;
+                        } 
+                    }
+
+                    .text {
+                        font-size: 16px;
+                    }
+                }  
+            }
         }
     }
 

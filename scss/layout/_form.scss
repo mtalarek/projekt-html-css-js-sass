@@ -1,5 +1,5 @@
 #form-contact {
-    
+    margin-top: 70px;
     .form-img {
         display: flex;
         height: 500px;
@@ -38,7 +38,7 @@
                         justify-content: space-between;
                         flex-wrap: wrap;
                         align-content: space-around;
-
+                        
                         input,
                         select,
                         textarea {
@@ -51,10 +51,11 @@
                             text-transform: uppercase;
                             outline: none;
 
-                            &.border {
+                            &.error {
                                 border-bottom: 1px solid red;
                             }
 
+                            
                         }
 
                         textarea {
@@ -63,18 +64,24 @@
                         ::-webkit-input-placeholder {
                             color: #fff;
                         }
-                    }
-
-                    p {
-                        color: red;
-                        opacity: 0;
-
-                        &.error {
-                            opacity: 1;
+                        p {
+                            color: red;
+                            opacity: 0;
+    
+                            &.error {
+                                opacity: 1;
+                            }
+                            
+                            &.send {
+                                color: #fff;
+                                display: block;
+                                opacity: 1;
+                            }
                         }
-                    }
-
-                    
+                        button {
+                            margin: 0;
+                        }
+                    }                  
                 }
             }
 
@@ -104,7 +111,7 @@
                         margin-right: 0;
                         flex-basis: 72%;
 
-                        #formula {
+                        #appointment-form {
                             input,
                             select {
                                 width: 47%;

@@ -21,7 +21,6 @@
 </head>
 
 <body>
-
     <nav class="main-nav">
         <div class="container">
             <div class="main-nav-holder">
@@ -32,10 +31,10 @@
                     <div class="mobile-close"><i class="fas fa-times"></i></div>
                     <ul class="menu">
                         <li class="menu-item"><a href="">HOME</a></li>
-                        <li class="menu-item"><a href="">About</a></li>
-                        <li class="menu-item"><a href="">Feature</a></li>
-                        <li class="menu-item"><a href="">Service</a></li>
-                        <li class="menu-item"><a href="">Contact</a></li>
+                        <li class="menu-item"><a href="#about">About</a></li>
+                        <li class="menu-item"><a href="#procedures">Feature</a></li>
+                        <li class="menu-item"><a href="#services">Service</a></li>
+                        <li class="menu-item"><a href="#contact">Contact</a></li>
                     </ul>
 
                 </div>
@@ -47,7 +46,7 @@
         <div class="container">
             <div class="header-content">
                 <p class="p1">spa & beauty center</p>
-                <p class="p2">Beauty and success starts here.</p>
+                <h1 class="p2">Beauty and success starts here.</h1>
                 <p class="p3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sed repellendus vitae
                     similique?</p>
             </div>
@@ -68,16 +67,16 @@
 
     </header>
 
-    <div class="about">
+    <section id="about" class="about">
         <div class="container">
             <img src="img/logo.png" alt="logo">
             <p class="p1">about our spa center</p>
-            <h2>Come and you will be Inspired!</h2>
+            <h2 class="p2">Come and you will be Inspired!</h2>
             <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, eveniet in velit eligendi
                 magnam assumenda quam recusandae! Doloremque, nulla ad nam illum neque.</p>
             <a href="" class="btn-primary">Read more</a>
         </div>
-    </div>
+    </section>
 
     <section id="services" class="services">
         <div class="row">
@@ -115,15 +114,15 @@
     <section id="procedures">
         <div class="container">
             <header class="section-header">
-                <h1>Popular Procedures</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed sapiente corporis enim explicabo
+                <h2 class="p1">Popular Procedures</h2>
+                <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed sapiente corporis enim explicabo
                     deleniti maiores.</p>
             </header>
             <div class="box">
                 <div class="shadow col col-md-33p">
                     <div class="box-item">
                         <img src="img/procedures-bg-1.jpg" alt="procedure1">
-                        <h2>Massage Therapy</h2>
+                        <h3>Massage Therapy</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed sapiente corporis enim
                             explicabo deleniti maiores.</p>
                         <a href="" class="btn-secondary">Read more</a>
@@ -132,7 +131,7 @@
                 <div class="shadow col col-md-33p">
                     <div class="box-item">
                         <img src="img/procedures-bg-2.jpg" alt="procedure2">
-                        <h2>Beauty Care</h2>
+                        <h3>Beauty Care</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed sapiente corporis enim
                             explicabo deleniti maiores.</p>
                         <a href="" class="btn-primary">Read more</a>
@@ -141,7 +140,7 @@
                 <div class="shadow col col-md-33p">
                     <div class="box-item">
                         <img src="img/procedures-bg-3.jpg" alt="procedure3">
-                        <h2>Exlusive Reflexology</h2>
+                        <h3>Exlusive Reflexology</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed sapiente corporis enim
                             explicabo deleniti maiores.</p>
                         <a href="" class="btn-secondary">Read more</a>
@@ -154,7 +153,7 @@
     <section id="team">
         <div class="container">
             <header class="section-header">
-                <h1>Experienced Team</h1>
+                <h2>Experienced Team</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed sapiente corporis enim explicabo
                     deleniti maiores.</p>
             </header>
@@ -162,7 +161,7 @@
                 <div class="col col-md-33p">
                     <img src="img/team-1.jpg" alt="team1">
                     <div class="frame shadow">
-                        <h2>Jenny Austin</h2>
+                        <h3>Jenny Austin</h2>
                         <p>Thai Massage</p>
                         <div class="social">
                             <a href="">
@@ -181,7 +180,7 @@
                 <div class="col col-md-33p">
                     <img src="img/team-3.jpg" alt="team2">
                     <div class="frame shadow">
-                        <h2>David Hannan</h2>
+                        <h3>David Hannan</h2>
                         <p>Thai Massage</p>
                         <div class="social">
                             <a href="">
@@ -199,7 +198,7 @@
                 <div class="col col-md-33p">
                     <img src="img/team-2.jpg" alt="team3">
                     <div class="frame shadow">
-                        <h2>Cheryl Harris</h2>
+                        <h3>Cheryl Harris</h2>
                         <p>Thai Massage</p>
                         <div class="social">
                             <a href="">
@@ -227,20 +226,20 @@
             <div class="form-container">
                 <div class="form">
                     <div class="column">
-                        <form action="" id="formula">
-                            <input type="text" id="name" name="name" placeholder="NAME">
-                            <input type="email" id="email" name="email" placeholder="EMAIL">
-                            <select name="service" id="service" name="service" id="">
-                                <option value="select">Select service</option>
+                        <form id="appointment-form">
+                            <input type="text" id="appointment-name"  name="name" placeholder="NAME" class="form-field">
+                            <input type="email" id="appointment-email" name="email" placeholder="EMAIL" class="form-field">
+                            <select id="appointment-service" name="service" class="form-field">
+                                <option value="">Select service</option>
                                 <option value="normal">Normal service</option>
                                 <option value="VIP">VIP service</option>
                             </select>
-                            <input type="tel" name="phone" id="phone" placeholder="PHONE NUMBER">
-                            <input type="date" name="date" id="data" placeholder="DATE">
-                            <input type="time" name="time" id="time" placeholder="TIME">
-                            <textarea name="notes" id="notes" placeholder="Your notes"></textarea>
-                            <button type="submit" id="btn-send" class="btn-form">MAKE AN APPOINTMENT</button><br>
-                            <p id="error">Uzupełnij wszystkie pola!</p>
+                            <input type="tel" name="phone" id="appointment-phone" placeholder="PHONE NUMBER" class="form-field">
+                            <input type="date" name="date" id="appointment-date" placeholder="DATE" class="form-field">
+                            <input type="time" name="time" id="appointment-time" placeholder="TIME" class="form-field">
+                            <textarea name="notes" id="appointment-message" placeholder="Your notes" class="form-field"></textarea>
+                            <button type="submit" id="btn-send" class="btn-form">MAKE AN APPOINTMENT</button>
+                            <p id="error" class="appointment-message">Uzupełnij wszystkie pola!</p>
                         </form>
                         
                     </div>
@@ -254,7 +253,7 @@
     <section id="blog">
         <div class="container">
             <header class="section-header">
-                <h1>Latest From Blog</h1>
+                <h2>Latest From Blog</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed sapiente corporis enim explicabo
                     deleniti maiores.</p>
             </header>
@@ -263,7 +262,7 @@
                     <div class="box-item">
                         <img src="img/blog-1.jpg" alt="blog1">
                         <p class="data">RELAXATION | JULY 03.2019</p>
-                        <h2>Had seed herb grass mids</h2>
+                        <h3>Had seed herb grass mids</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <a href="" class="btn-secondary">Read more</a>
                     </div>
@@ -272,7 +271,7 @@
                     <div class="box-item">
                         <img src="img/blog-2.jpg" alt="blog2">
                         <p class="data">RELAXATION | JULY 03.2019</p>
-                        <h2>Divid image unto creeping</h2>
+                        <h3>Divid image unto creeping</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <a href="" class="btn-primary">Read more</a>
                     </div>
@@ -281,7 +280,7 @@
                     <div class="box-item">
                         <img src="img/blog-3.jpg" alt="blog3">
                         <p class="data">RELAXATION | JULY 03.2019</p>
-                        <h2>Had seed herb grass mids</h2>
+                        <h3>Had seed herb grass mids</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <a href="" class="btn-secondary">Read more</a>
                     </div>
@@ -292,7 +291,7 @@
 
     <section id="contact">
         <div class="contact-header">
-            <h1>Get In Touch</h1>
+            <h2>Get In Touch</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro error quo illum, veritatis ad cupiditate molestiae, consequuntur, laborum fuga totam architecto soluta voluptate.</p>
         </div>
         
